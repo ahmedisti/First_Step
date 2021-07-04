@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	#id{
+		background-color: lightblue;
+		color: black;
+		padding: 40px;
+		text-align: center;
+	}
+	.city{
+		background-color: tomato;
+		color: white;
+		border: 2px solid black;
+		margin: 20px;
+		padding: 20px;
+
+	}
+	.main{
+		text-align: center;
+	}
+
+</style>
+</head>
+<body>
+
+	<!-- For Multiple class here city is a class and also main is the class -->
+
+	<div class="city main">
+		
+		<h2>Dhaka</h2>
+		<p>Capital of Bangladesh</p>
+	</div>
+
+	<div class="city">
+		
+		<h2>Dinajpur</h2>
+		<p>My Home Town</p>
+	</div>
+	
+	<div class="city">
+		
+		<h2>Chittagong</h2>
+		<p>City of ocean</p>
+	</div>
+
+	<!-- Javascript -->
+
+	<h2>Use of The class Attribute in JavaScript</h2>
+	<p>Click the button to hide all elements with class name "city":</p>
+
+	<button onclick="myFunction()">Hide Elements</button>
+
+	<h2 class="city">London</h2>
+	<p>London is the capital of England.</p>
+
+	<h2 class="city">Paris</h2>
+	<p>Paris is the capital of France.</p>
+
+	<h2 class="city">Tokyo</h2>
+	<p>Tokyo is the capital of Japan.</p>
+
+	<script>
+		function myFunction() {
+			var x = document.getElementsByClassName("city");
+			for (var i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+		}
+	</script>
+
+	/* for id */
+
+	<h1 id="id">For Id</h1>
+
+	<!--book mark with id -->
+
+	<p><a href="#C4">Jump to 4</a></p>
+
+	<h2>C1</h2>
+	<p>This is 1</p>
+
+
+	<h2>C2</h2>
+	<p>This is 2</p>
+
+
+	<h2>C3</h2>
+	<p>This is 3</p>
+
+
+	<h2 id="C4">C4</h2>
+	<p>This is 4</p>
+
+
+	<h2>C5</h2>
+	<p>This is 5</p>
+
+
+	<h2>C6</h2>
+	<p>This is 6</p>
+
+	<!--Id with JS-->
+
+	<h1 id="id">This will Change using java script </h1>
+	<button onclick="displayResult">Change it</button>
+
+	<script>
+		function displayResult(){
+			document.getElementById("id").innerHTML = "Change it";
+		}
+	</script>
+
+	<h2>Iframe - Target for a Link</h2>
+
+	<iframe src="fast.com" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
+
+	<p><a href="https://www.fast.com" target="iframe_a">fast.com</a></p>
+
+	<p>When the target attribute of a link matches the name of an iframe, the link will open in the iframe.</p>
+
+
+</body>
+</html>
