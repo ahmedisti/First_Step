@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+
+	
+
+	<h2>JavaScript for chamge text</h2>
+	<p>This example writes "hello JS" in to an HTML element with id = "demo": </p>
+
+	<button type="button" onclick="myFunction()">
+		Click Me!
+		
+	</button>
+
+	<p id="demo">See the Magic Click The Button</p>
+
+	<script>
+		function myFunction(){
+			document.getElementById("demo").innerHTML = "Asalamualaikum";
+
+			document.getElementById("demo").style.color = "red";
+			document.getElementById("demo").style.fontSize = "25px";
+			document.getElementById("demo").style.backgroundColor = " yellow";
+		}
+	</script>
+
+
+	<h1 style="color: darkred;">
+		Lets Switch on The light
+	</h1>
+
+	<script>
+
+		function light(sw)
+		{
+			var pic;
+
+			if (sw==0) 
+				{pic = "C:/Users/Istiaq/Desktop/corona/pic_bulboff.gif"}
+			else
+			{
+				pic = "C:/Users/Istiaq/Desktop/corona/pic_bulbon.gif"
+			}
+			document.getElementById("myImage").src = pic;
+		}
+
+	</script>
+
+
+	<img id = "myImage" src="C:\Users\Istiaq\Desktop\corona\pic_bulboff.gif" alt="Light" width="100" height="100" >
+
+	<p>
+
+		<button type="button" onclick="light(1)"  >Light On</button>
+
+
+		<button type="button" onclick="light(0)"  >Light Off</button>
+
+
+	</p>
+
+	<h1 style="font-size: 10vw;">Good Night</h1>
+
+
+
+
+
+
+</body>
+</html>
