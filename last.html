@@ -7,33 +7,44 @@
 	<link rel="stylesheet" href="">
 </head>
 <body>
-	<h1>Form</h1>
+
+
+	<h1 style="text-align: center; color: blue;">Asalamualaikum</h1>
+
+	<iframe width="750" height="345" src="https://www.youtube.com/watch?v=NUYvbT6vTPs">
+		
+	</iframe>
+
+
+	<h2>Form</h2>
 
 	<form action="/action_page.php" target="_blank">
 		<fieldset>
 			<legend>Name</legend>
 			<label for="fname">First Name:</label><br>
-			<input type="text" id="fname" name="fname" value=""><br>
-			<label for="lname">Lastt Name:</label><br>
-
+			<input type="text" id="fname" name="fname" value="" autofocus><br>
+			<label for="lname">Last Name:</label><br>
 			<input type="text" id="lname" name="lname" value=""><br>
+
+			<label for="mail">Enter Mail:</label>
+			<input type="email" id="mail" name="mail" autocomplete="on"> <br>
 			<input type="submit" value="Submit">
 		</fieldset>
-		
+
 	</form>
 
 	<h2>Radio</h2>
 
 	<form action="">
-		
+
 		<label for="html">HTML</label>
 		<input type="radio" id="html" name="fav_language" value="HTML"><br>
 
-		
+
 		<label for="css">CSS</label>
 		<input type="radio" id="css" name="fav_language" value="CSS"><br>
 
-		
+
 		<label for="javascript">JavaScript</label>
 		<input type="radio" id="javascript" name="fav_language" value="JavaScript"><br>
 
@@ -58,7 +69,7 @@
 	<h2>Select</h2>
 
 	<form action="/action_page.php">
-		
+
 		<label for="cars">Choose One</label>
 		<select name="cars" id="cars" size="2" multiple>
 			<option value="Audi">Audi</option>
@@ -109,6 +120,42 @@
 						<br><br>
 						<input type="submit">
 					</form>
+
+					<br>
+
+					<form action="">
+						<label for="favc">Select color</label>
+						<input type="color" id="favc" name="color"> <br>
+
+						<label for="birthday">Birthday</label>
+						<input type="datetime-local" id="birthday" name="birthday"> <br>
+						<input type="submit"> <br>
+
+						<br>
+						<br>
+
+						<label for="myfile">Choose File</label>
+						<input type="file" id="myfile" name="myfile" multiple>
+						<input type="submit">
+
+						<br>
+						<br>
+
+						<label for="num">Between 1 to 10</label>
+						<input type="number" id="num" value="num" max="10" min="1" disabled>
+
+						<br>
+						<br>
+
+						<label for="tele">Enter phone number:</label>
+						<input type="tel" id="tele" name="tele" placeholder="+88017-53147587" pattern="[0-9]{5}-[0-9]{10}"> <br>
+
+						<input type="image" src="C:/Users/Istiaq/Desktop/corona/submit.gif" width="200" height="200">
+
+
+					</form>
+
+
 
 
 
